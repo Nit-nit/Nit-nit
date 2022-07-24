@@ -10,7 +10,7 @@ i am just an average guy
   </head>
 
   <body>
-    <div class="main">
+    <div class="main" style="color:#ffcc00;">
       main class?
     </div>
   </body>
