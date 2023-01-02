@@ -4,4 +4,4 @@ Check out [Devon Crawford](https://github.com/DevonCrawford), I want to be like 
 
 Check out [Ojha Studios](https://GitHub.com/Ojha-Studios) Organisation.
 
-Check out [My Blogs](https://github.com/)
+Check out [My GitHub Blogs](https://github.com/Nit-nit/My-GitHub-Blogs)
