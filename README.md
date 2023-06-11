@@ -1,1 +1,1 @@
-Check out [Devon Crawford](https://github.com/DevonCrawford), I want to be like him.
+[Devon Crawford](https://github.com/DevonCrawford) my inspiration.
