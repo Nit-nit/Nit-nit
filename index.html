@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nit-nit | Minimal Dark Newspaper</title>
+    <meta
+      name="description"
+      content="A dark, minimal newspaper-style landing page for a GitHub website."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <p class="edition">GitHub Pages Edition</p>
+      <h1>NIT-NIT CHRONICLE</h1>
+      <p class="date">Issue 01 · Daily Build</p>
+    </header>
+
+    <main class="front-page">
+      <article class="lead-story">
+        <p class="kicker">Top Story</p>
+        <h2>Minimal by Design, Built for Reading</h2>
+        <p>
+          This site embraces strong typography, clean spacing, and a quiet dark palette.
+          The result is a newspaper-inspired homepage that keeps focus on content,
+          not decoration.
+        </p>
+      </article>
+
+      <section class="columns" aria-label="News columns">
+        <article>
+          <h3>Code Desk</h3>
+          <p>
+            Use this section for project updates, release notes, and devlogs. The
+            layout scales from one column on mobile to three columns on larger
+            screens.
+          </p>
+        </article>
+
+        <article>
+          <h3>Open Source</h3>
+          <p>
+            Highlight repositories, contributors, and milestones. Keep copy short and
+            purposeful to maintain the newspaper rhythm.
+          </p>
+        </article>
+
+        <article>
+          <h3>Editorial</h3>
+          <p>
+            Add personal notes, lessons learned, or links to your writing. This
+            template favors legibility and calm visual hierarchy.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Nit-nit · <a href="https://github.com/">GitHub</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
