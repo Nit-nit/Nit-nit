@@ -1,0 +1,131 @@
+:root {
+  --bg: #0f0f0f;
+  --bg-soft: #151515;
+  --text: #ece7de;
+  --muted: #b8b2a8;
+  --line: #303030;
+  --accent: #f0d8a8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.masthead {
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  padding: 1rem 1rem 1.5rem;
+  background: linear-gradient(to bottom, #111, #0f0f0f);
+}
+
+.masthead h1 {
+  margin: 0.3rem 0;
+  font-size: clamp(1.9rem, 6vw, 3.4rem);
+  letter-spacing: 0.08em;
+}
+
+.edition,
+.date {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.front-page {
+  width: min(1000px, 92vw);
+  margin: 1.75rem auto 2.75rem;
+}
+
+.lead-story {
+  border: 1px solid var(--line);
+  padding: 1.2rem;
+  background: var(--bg-soft);
+}
+
+.kicker {
+  margin: 0;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+}
+
+.lead-story h2 {
+  margin: 0.45rem 0 0.8rem;
+  font-size: clamp(1.3rem, 3.4vw, 2rem);
+  line-height: 1.2;
+}
+
+.lead-story p {
+  margin: 0;
+  color: #d9d3c8;
+  line-height: 1.65;
+}
+
+.columns {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.columns article {
+  border: 1px solid var(--line);
+  padding: 0.95rem 1rem;
+  background: #121212;
+}
+
+.columns h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.columns p {
+  margin: 0;
+  color: #cdc7bd;
+  line-height: 1.6;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+@media (min-width: 760px) {
+  .columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
